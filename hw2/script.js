@@ -25,7 +25,7 @@ x  = 3;
 
 // Second task
 
-let time = prompt('Tell me the minutes, Jason!'); //0-59
+let time = +prompt('Tell me the minutes, Jason!'); //0-59
 
     if (time <= 15) {
         console.log('First quarter')
@@ -42,7 +42,7 @@ let time = prompt('Tell me the minutes, Jason!'); //0-59
 
 // Third task
 
-let day = prompt('Check your calendar, what is todayʼs number?');
+let day = +prompt('Check your calendar, what is todayʼs number?');
 
     if (day <= 10) {
         console.log('First dacade of the mounth')
@@ -58,7 +58,7 @@ let day = prompt('Check your calendar, what is todayʼs number?');
 
 // Fourth task
 
-let dayOfWeek = prompt('What day is it? (1-7, Mon-Sun)'); //1-7
+let dayOfWeek = +prompt('What day is it? (1-7, Mon-Sun)'); //1-7
 
     switch (dayOfWeek) {
         case '1':
@@ -88,8 +88,8 @@ let dayOfWeek = prompt('What day is it? (1-7, Mon-Sun)'); //1-7
 
 // Fifth task
 
-let firstNumber = prompt('Enter your first number');
-let secondNumber = prompt('Enter your second number');
+let firstNumber = +prompt('Enter your first number');
+let secondNumber = +prompt('Enter your second number');
 
     if (firstNumber > secondNumber) {
         console.log(firstNumber)
