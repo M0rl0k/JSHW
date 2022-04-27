@@ -29,7 +29,9 @@ cilSq(5,15)
 let array = [10, 20, 30, 40, 50, 60];
 
 function logger(arr) {
-    console.log(arr)
+    for (let item of arr) {
+        console.log(item);
+    }
 }
 
 logger(array)
@@ -37,7 +39,7 @@ logger(array)
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
 function paragMaker(txt) {
-    document.write(`<p>txt</p>`)
+    document.write(`<p>${txt}</p>`)
 }
 
 paragMaker('Lorem ipsum.')
@@ -106,14 +108,14 @@ let numbers = [23, 34, 15, 98, 56, 31, 2, 9, 85, 36, 7, 1, -2]
 
 function minNum(arr) {
     let minNum = arr[0];
-    for (let i = 1; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] < minNum)
             minNum = arr[i];
     }
-    document.write(`<div>${minNum}</div>`);
+    return minNum;
 }
 
-minNum(numbers)
+document.write(`<div>${minNum(numbers)}</div>`)
 
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
