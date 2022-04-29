@@ -201,3 +201,16 @@ const reverseFiller = (arr) => {
 }
 
 console.log(reverseFiller(numbers));
+
+//-створити функцію, яка приймає масив з 2х об'єктів, та міняє їх місцями.
+
+let usersShort = [
+    {id: 29, name: 'vasya', age: 20},
+    {id: 22, name: 'illya', age: 23}];
+
+const swapper = (arr) => {
+  arr.reverse()
+    return arr
+}
+
+console.log(swapper(usersShort));
