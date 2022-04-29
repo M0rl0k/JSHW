@@ -209,8 +209,10 @@ let usersShort = [
     {id: 22, name: 'illya', age: 23}];
 
 const swapper = (arr) => {
-  arr.reverse()
-    return arr
+  let plate = arr[0];
+  arr[0] = arr[1];
+  arr[1] = plate;
+  return arr
 }
 
 console.log(swapper(usersShort));
