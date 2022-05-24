@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 50vw;
+
+            border: 2px black solid;
+            box-sizing: border-box;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div id="text">Lorem ipsum dolor.</div>
+<button id="btn">Delete text</button>
+
+<br>
+<br>
+<br>
+
+<label>
+    Enter you age
+    <br>
+    <input type="number" name="age" id ="input">
+    <button id ="submit">Submit</button>
+</label>
+
+<br>
+<br>
+<br>
+
+<div class="wrap">
+    <form name="form1">
+        <label>Enter Your First Name:
+            <input type="text" name="name" id="nameInput">
+        </label>
+        <label>Enter Your Second Name:
+            <input type="text" name="secondName" id="secondNameInput">
+        </label>
+    </form>
+
+    <br>
+
+    <br>
+
+    <form name="form2">
+        <label>Choose Your age:
+            <input type="number" name="age" id="ageInput">
+        </label>
+        <label>Enter Your city:
+            <input type="text" name="city" id="city">
+        </label>
+    </form>
+
+    <br>
+
+    <button id="button">Send</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<form name="table">
+    <label>Rows
+        <input type="number" name="rowCounter" id="row">
+    </label>
+    <label>Columns
+        <input type="number" name="columnsCounter" id="column">
+    </label>
+    <label>Content
+        <input type="text" name="content" id="content">
+    </label>
+    <label>
+        <button type="submit">Send</button>
+    </label>
+</form>
+
+
+<script src="jsScript.js"></script>
+
+</body>
+</html>
