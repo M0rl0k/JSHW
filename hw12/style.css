@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: lightyellow;
+}
+h1 {
+    text-align: center;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
