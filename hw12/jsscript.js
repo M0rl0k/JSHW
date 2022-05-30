@@ -12,23 +12,19 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         for (const post of postsApi) {
             let postDiv = document.createElement('div');
             postDiv.classList.add('post');
-            postDiv.style.width = '18%';
-            postDiv.style.margin = '1%'
-            postDiv.style.boxSizing = 'border-box';
-            postDiv.style.border = '1px solid black';
 
             let userIdDiv = document.createElement('div');
             let idDiv = document.createElement('div');
             let titleDiv = document.createElement('div');
             let bodyDiv = document.createElement('div');
 
-            postDiv.append(userIdDiv, idDiv, titleDiv, bodyDiv);
-            posts.appendChild(postDiv);
-
             idDiv.innerText = post.id;
             titleDiv.innerText = post.title;
             bodyDiv.innerText = post.body;
             userIdDiv.innerText = post.userId;
+
+            postDiv.append(userIdDiv, idDiv, titleDiv, bodyDiv);
+            posts.appendChild(postDiv);
 
         }
     });
@@ -47,10 +43,6 @@ fetch('https://jsonplaceholder.typicode.com/comments')
         for (const comment of commentsApi) {
             let commentDiv = document.createElement('div');
             commentDiv.classList.add('comment');
-            commentDiv.style.width = '18%';
-            commentDiv.style.margin = '1%'
-            commentDiv.style.boxSizing = 'border-box';
-            commentDiv.style.border = '1px solid black';
 
             let postIdDiv = document.createElement('div');
             let idDiv = document.createElement('div');
@@ -65,7 +57,7 @@ fetch('https://jsonplaceholder.typicode.com/comments')
             idDiv.innerText = comment.id;
             nameDiv.innerText = comment.title;
             emailDiv.innerText = comment.email;
-            bodyDiv.innerText = comment.body;
+            bodyDiv.innerText = comment.body;Я
 
         }
     });
