@@ -27,7 +27,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             posts.appendChild(postDiv);
 
         }
-    });
+    })
 
 // 2.
 // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.
@@ -60,5 +60,5 @@ fetch('https://jsonplaceholder.typicode.com/comments')
             bodyDiv.innerText = comment.body;Я
 
         }
-    });
+    })
 
