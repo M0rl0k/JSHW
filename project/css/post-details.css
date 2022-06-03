@@ -1,0 +1,23 @@
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.postdetails{
+    width: 100%;
+    text-align: center;
+}
+
+.comments{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment{
+    width: 23%;
+    margin: 1%;
+
+    box-sizing: border-box;
+    border: 1px black solid;
+}
